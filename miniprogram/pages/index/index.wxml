@@ -1,0 +1,70 @@
+<!--pages/index/index.wxml-->
+<view id="workshop-info">
+  <view id="workshop-title">
+    <text class="title">江西农业大学半月工作室</text>
+  </view>
+  <van-row>
+    <van-col span="6.5">
+      <image src="../../images/workshoplogo.png"  id="workshop-logo"></image>
+    </van-col>
+    <van-col span="17.5" >
+    <text class="textbox-beyond">半月工作室成立于2015年，是以彭莹琼教授为指导老师的大学生团队。半月工作室集软件开发，人工智能，算法分析于一体，以Java ...</text>
+    </van-col>
+  </van-row>
+</view>
+
+<view class="show">
+  <view class="img-title">
+  <image src="../../images/kaohe.png" class="img-title-img" ></image>
+    <text class="img-title-title">考核任务</text>
+  </view>
+  <view id="homework-list">
+    <view class="homework-sketch" >
+      <text class="title" style="margin: 5rpx 0 0 15rpx;">半月工作室23级第一次考核</text>
+      <view style="vertical-align: middle;margin:35rpx 0 0 15rpx ;">
+      
+      <image src="../../images/clock.png" style="width: 5%;height: 29rpx;vertical-align: middle;"></image>
+      <text style="vertical-align: middle;font-size: small;color: darkgray;">开始时间：2022-12-09 20:21:59</text>
+      <view>
+      
+        <image src="../../images/clock_admit.png" style="width: 5%;height: 29rpx;vertical-align: middle;"></image>
+        <text style="vertical-align: middle;font-size: small;color: #fe9a54;">限时：1天 02:08:33</text>
+        <van-button round  size="small" color="linear-gradient(to right, #4bb0ff, #6149f6)"style="float: right;margin-right:20rpx;margin-top: -20rpx;">提交</van-button>
+      </view>
+      </view>
+    </view>
+    <view class="homework-sketch" >2</view>
+    <view class="homework-sketch" >3</view>
+  </view>
+</view>
+
+<scroll-view class="show" style="height: 900rpx;">
+  <view class="img-title">
+    <image src="../../images/workshoplogo.png" class="img-title-img" ></image>
+    <view class="img-title-title"> 半月工作室 </view>
+  </view>
+  <view class="capsule-tag" >
+    <image src="../../images/tags.png" class="capsule-tag-img" ></image>
+    <text style="vertical-align:super;margin-right: 15rpx;color: #52995f;">获奖展示</text>
+  </view>
+  <view style="margin-left: 50rpx;margin-bottom: 50rpx;">
+    <view style=" font-weight: bold;color: #7d304c;">大创项目|国家级</view>
+    <text style="color: darkgray;">“酒卫士”基于图像识别技术的酒类惨伪鉴别APP\n“猪好助”基于图像识别的猪表型研究APP\n“宠物本本”宠物模拟、辅助养育系统\n“桑智道”基于图像识别的桑蚕专家智能决策系统\n
+</text>
+    
+    <view style=" font-weight: bold;color: #7d304c;margin-top: 20rpx;">大创项目|省级</view>
+    <text style="color: darkgray;">“耕农土地”耕作方案土壤调节一体化APP</text>
+  </view>
+  <view class="capsule-tag" >
+    <image src="../../images/tags.png" class="capsule-tag-img" ></image>
+    <text style="vertical-align:super;margin-right: 15rpx;color: #52995f;">优秀成员</text>
+  </view>
+  <view style="margin-left: 50rpx;margin-bottom: 50rpx;">
+    <text style=" font-weight: bold;color: rgb(91, 88, 88);">李鹏翔：中国地质大学\n李孝通：中国地质大学\n蔡振：华东师范大学</text>
+    
+    </view>
+</scroll-view>
+
+
+
+

@@ -1,0 +1,8 @@
+.homework-sketch{
+  background-color: #fff;
+  width: 94%;
+  height:31%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-shadow:  0rpx 0rpx 10rpx rgba(197, 195, 195, 0.9)
+}

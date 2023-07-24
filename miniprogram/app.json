@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/homework/homework",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0068c4",
+    "navigationBarTitleText": "半月工作室",
+    "navigationBarTextStyle": "white"
+    
+
+    
+  },"tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index_focus.png"
+    }, {
+      "pagePath": "pages/homework/homework",
+      "text": "",
+      "iconPath": "images/homework.png",
+      "selectedIconPath": "images/homework_focus.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my_focus.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+  
+}

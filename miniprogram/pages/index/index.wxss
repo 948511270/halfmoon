@@ -1,0 +1,80 @@
+/* pages/index/index.wxss */
+@import "/style/homework-sketch.wxss";
+
+#workshop-info{
+  background-color: #fff;
+  margin: 5rpx;
+  border-radius: 15rpx;
+}
+#workshop-title{
+  margin: 15rpx 15rpx 15rpx 25rpx;
+}
+.title{
+  font-size: larger;
+  font-weight: bold;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#workshop-logo{
+  margin: 15rpx 15rpx 15rpx 15rpx;
+  width: 100%;
+  height: 170rpx;
+}
+.textbox-beyond{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 15rpx 0rpx 15rpx 25rpx;
+  width: 95%;
+  height: 170rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-orient:vertical;
+  -webkit-line-clamp: 3;
+}
+.show{
+  background-color: #fff;
+  width: 100%;
+  height: 700rpx;
+  margin: 25rpx 0 0 0;
+  border-radius: 10rpx;
+}
+#homework-list-title{
+  background-color: aquamarine;
+  width: 100%;
+  margin: 0 0 15rpx 0;
+  height: 70rpx;
+  border-radius: 10rpx 10rpx 0 0;
+}
+#homework-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  
+}
+
+.img-title{
+  width: 100%;
+  height: 13%;
+  display: flex;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.img-title .img-title-img{
+  height:70%;
+  width: 12%;
+  margin-left: 10rpx;
+}
+.img-title .img-title-title{
+  margin-left: 10rpx;
+}
+.capsule-tag{
+  display: inline-block;
+  height: 5.8%;
+  background-color:#e4f9e9 ;
+  border-radius: 40rpx;
+  margin-left: 10rpx;
+}
+.capsule-tag .capsule-tag-img{
+  height:75%;
+  width: 45rpx;
+  margin: 0rpx 15rpx 0 10rpx;
+}

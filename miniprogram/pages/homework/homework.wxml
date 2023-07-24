@@ -1,0 +1,21 @@
+<view class="top-tab flex-wrp flex-tab">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+<view hidden="{{currentNavtab==0 ? '' : true}}">
+  <view class="homework-sketch" style="margin-top: 135rpx;" >
+      <text class="title" style="margin: 5rpx 0 0 15rpx;">半月工作室23级第一次考核</text>
+      <view style="vertical-align: middle;margin:35rpx 0 0 15rpx ;">
+      
+      <image src="../../images/clock.png" style="width: 5%;height: 29rpx;vertical-align: middle;"></image>
+      <text style="vertical-align: middle;font-size: small;color: darkgray;">开始时间：2022-12-09 20:21:59</text>
+      <view>
+      
+        <image src="../../images/clock_admit.png" style="width: 5%;height: 29rpx;vertical-align: middle;"></image>
+        <text style="vertical-align: middle;font-size: small;color: #fe9a54;">限时：1天 02:08:33</text>
+        <van-button round  size="small" color="linear-gradient(to right, #4bb0ff, #6149f6)"style="float: right;margin-right:20rpx;margin-top: -20rpx;">提交</van-button>
+      </view>
+      </view>
+</view>
+</view>
