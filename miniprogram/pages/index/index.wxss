@@ -2,7 +2,7 @@
 @import "/style/homework-sketch.wxss";
 
 #workshop-info{
-  background-color: #fff;
+  background-color: #f4f9ff;
   margin: 5rpx;
   border-radius: 15rpx;
 }
@@ -69,7 +69,7 @@
 .capsule-tag{
   display: inline-block;
   height: 5.8%;
-  background-color:#e4f9e9 ;
+  background-color:#f4f9ff ;
   border-radius: 40rpx;
   margin-left: 10rpx;
 }
@@ -77,4 +77,9 @@
   height:75%;
   width: 45rpx;
   margin: 0rpx 15rpx 0 10rpx;
+}
+.capsule-tag .capsule-tag-content{
+  vertical-align:super;
+  margin-right: 15rpx;
+  color: #3693f0;
 }

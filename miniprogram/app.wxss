@@ -30,7 +30,9 @@ button::after{
   flex-grow: 1;
   text-align: center;
 }
-
+.textstyle{
+  color: darkgray
+}
 page {
   background: #f6f6f6;
   display: flex;

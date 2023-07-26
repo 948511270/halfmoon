@@ -11,66 +11,25 @@
     </view>
   </view>
 
-  <view class="my">
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/eye.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的关注</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/star.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的收藏</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/draft.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的草稿</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/recent.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>最近浏览</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/book.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的书架</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/live.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的 Live</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/zhi.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的值乎</text>
-      </view>
-    </view>
-
+  <view class="grille">
+    <van-cell title="我的批阅" is-link bind:click="urlJump" icon="todo-list" icon="column"  size="large"/>
+    <van-cell title="修改信息" is-link bind:click="showPopup2" icon="todo-list" icon="setting"  size="large"/>
+    <van-popup
+  show="{{ show2 }}"
+  position="bottom"
+  bind:close="closePopup2"
+    />
+    <van-cell title="考核订阅" is-link bind:click="showPopup1" icon="todo-list"  size="large"/>
+    <van-popup show="{{show1}}" bind:close="closePopup1"   position="bottom" custom-style="width:100%;height:40%">
+    <block style="width: 100%;height: 100%;">
+      <button></button>
+    </block>
+    </van-popup>
   </view>
+  
 </view>
+
+
 
 
 

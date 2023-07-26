@@ -8,7 +8,7 @@
       <image src="../../images/workshoplogo.png"  id="workshop-logo"></image>
     </van-col>
     <van-col span="17.5" >
-    <text class="textbox-beyond">半月工作室成立于2015年，是以彭莹琼教授为指导老师的大学生团队。半月工作室集软件开发，人工智能，算法分析于一体，以Java ...</text>
+    <text class="textbox-beyond" class="textstyle">半月工作室成立于2015年，是以彭莹琼教授为指导老师的大学生团队。半月工作室集软件开发，人工智能，算法分析于一体，以Java ...</text>
     </van-col>
   </van-row>
 </view>
@@ -45,11 +45,11 @@
   </view>
   <view class="capsule-tag" >
     <image src="../../images/tags.png" class="capsule-tag-img" ></image>
-    <text style="vertical-align:super;margin-right: 15rpx;color: #52995f;">获奖展示</text>
+    <text class="capsule-tag-content">获奖展示</text>
   </view>
   <view style="margin-left: 50rpx;margin-bottom: 50rpx;">
     <view style=" font-weight: bold;color: #7d304c;">大创项目|国家级</view>
-    <text style="color: darkgray;">“酒卫士”基于图像识别技术的酒类惨伪鉴别APP\n“猪好助”基于图像识别的猪表型研究APP\n“宠物本本”宠物模拟、辅助养育系统\n“桑智道”基于图像识别的桑蚕专家智能决策系统\n
+    <text class="textstyle">“酒卫士”基于图像识别技术的酒类惨伪鉴别APP\n“猪好助”基于图像识别的猪表型研究APP\n“宠物本本”宠物模拟、辅助养育系统\n“桑智道”基于图像识别的桑蚕专家智能决策系统\n
 </text>
     
     <view style=" font-weight: bold;color: #7d304c;margin-top: 20rpx;">大创项目|省级</view>
@@ -57,7 +57,7 @@
   </view>
   <view class="capsule-tag" >
     <image src="../../images/tags.png" class="capsule-tag-img" ></image>
-    <text style="vertical-align:super;margin-right: 15rpx;color: #52995f;">优秀成员</text>
+    <text class="capsule-tag-content">优秀成员</text>
   </view>
   <view style="margin-left: 50rpx;margin-bottom: 50rpx;">
     <text style=" font-weight: bold;color: rgb(91, 88, 88);">李鹏翔：中国地质大学\n李孝通：中国地质大学\n蔡振：华东师范大学</text>

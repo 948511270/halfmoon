@@ -32,34 +32,15 @@
   color: #bababa;
   line-height: 34rpx;
 }
+.grille{
+  width: 100%;
 
-.my{
-  margin: 15rpx 0 0 0;
-  border-top: solid 1px #ebebeb;
-  border-bottom: solid 2px #ebebeb;
 }
-.my .my-item{
-  width: 750rpx;
-  background: #ffffff;
-  padding: 0
+.grille .van-cell{
+  padding: 50rpx;
+  color:#6d6d6d ;
 }
-.my .my-item .myitem-icon{
-  flex: 1;
+.van-cell__left-icon-wrap{
+  padding-right: 45rpx;
 }
-.my .my-item .myitem-icon image{
-  width: 45rpx;
-  height: 45rpx;
-  padding: 37.5rpx 0;
-}
-.my .my-item .myitem-name{
-  flex: 5;
-  text-align: left;
-  font-size: 34rpx;
-  color: #6d6d6d;
-  line-height: 60rpx;
-  padding: 30rpx 0;
-  border-bottom: solid 1px #ebebeb;
-}
-.my .my-item:last-child .myitem-name{
-  border-bottom: none;
-}
+

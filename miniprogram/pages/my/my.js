@@ -5,14 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    show1:false,
+    show2:false
   },
-
+  // 不知道为什么不能传参数 不然我就写到一个方法里了
+  showPopup1() {
+    this.setData({ show1: true });
+  },
+  showPopup2() {
+    this.setData({ show2: true });
+  },
+  closePopup1(){
+    this.setData({ show1: false });
+  },
+  closePopup2(){
+    this.setData({ show2: false });
+  },
+  urlJump(){
+    wx.redirectTo({
+      url: '/pages/index/index',
+    })
+  },
+  onClose() {
+    
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    
   },
 
   /**
@@ -26,7 +48,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    
   },
 
   /**
