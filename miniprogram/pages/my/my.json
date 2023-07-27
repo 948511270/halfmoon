@@ -1,7 +1,10 @@
 {
   "usingComponents": {
     "van-cell": "@vant/weapp/cell/index",
-    "van-popup": "@vant/weapp/popup/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cascader": "@vant/weapp/cascader/index"
+    
   },
   "navigationBarTitleText": "我的"
 }

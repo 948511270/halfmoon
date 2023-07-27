@@ -1,5 +1,6 @@
 <!--pages/my/my.wxml-->
 
+
 <view class="container more">
   <view class="user flex-wrp">
     <view class="avatar flex-item">
@@ -13,18 +14,54 @@
 
   <view class="grille">
     <van-cell title="我的批阅" is-link bind:click="urlJump" icon="todo-list" icon="column"  size="large"/>
+    <!-- 修改信息单元格->{修改信息弹出层嵌套{级联选择弹出层/学号填写弹出层}} -->
     <van-cell title="修改信息" is-link bind:click="showPopup2" icon="todo-list" icon="setting"  size="large"/>
-    <van-popup
-  show="{{ show2 }}"
-  position="bottom"
-  bind:close="closePopup2"
-    />
+    <van-popup show="{{ showModifyInformation }}" round position="bottom">
+  <van-cascader
+    wx:if="{{ showCascader }}"
+    value="{{ cascaderValue }}"
+    title="请选择所在班级"
+    options="{{ options }}"
+    bind:close="onClose"
+    bind:finish="onFinish"
+  />
+  <van-cell-group>
+    <van-field
+    wx:if="{{ showField }}"
+    value="{{fieldValue}}"
+    label="专业年级"
+    left-icon="contact"
+    disabled
+    border="{{ false }}"
+  />
+  <van-field
+  wx:if="{{ showField }}"
+  fieldValue="{{ fieldValue }}"
+  center
+    clearable
+    placeholder="请输入学号"
+    border="{{ false}}"
+    use-button-slot
+    bind:blur="onEnterID"
+  >
+  
+  <van-button slot="button" size="small" type="primary" >
+     
+     <text bindtap="onClickModifyInformation">点击确认</text>
+    </van-button>
+  </van-field>
+</van-cell-group>
+
+</van-popup>
+
     <van-cell title="考核订阅" is-link bind:click="showPopup1" icon="todo-list"  size="large"/>
-    <van-popup show="{{show1}}" bind:close="closePopup1"   position="bottom" custom-style="width:100%;height:40%">
+    
+    <!-- 考核订阅功能还没做 -->
+    <!-- <van-popup show="{{showAssessmentSubscription}}" bind:close="closePopup1"   position="bottom" custom-style="width:100%;height:40%">
     <block style="width: 100%;height: 100%;">
       <button></button>
     </block>
-    </van-popup>
+    </van-popup> -->
   </view>
   
 </view>
