@@ -1,0 +1,30 @@
+<view class="container">
+<view class="my-application">
+<view class="my-application-info">
+<text style="margin:10rpx 15rpx 10rpx 15rpx;">半月工作室23级第一次考核</text>
+<view>
+  <view style="display: inline-block;margin:10rpx 15rpx 10rpx 15rpx;">•</view>
+  <text>批阅时间：2023-10-23</text>
+</view>
+
+</view>
+<view class="my-application-score">
+90 
+<text style="font-size:medium;">分</text>
+</view>
+</view>
+<view class="my-application">
+<view class="my-application-info">
+<text style="margin:10rpx 15rpx 10rpx 15rpx;">半月工作室23级第一次考核</text>
+<view>
+  <view style="display: inline-block;margin:10rpx 15rpx 10rpx 15rpx;">•</view>
+  <text>批阅时间：2023-10-23</text>
+</view>
+
+</view>
+<view class="my-application-score">
+90 
+<text style="font-size:medium;">分</text>
+</view>
+</view>
+</view>

@@ -4,6 +4,14 @@
     "pages/homework/homework",
     "pages/my/my"
   ],
+  "subPackages": [
+    {
+      "root": "subPackages",
+      "pages": [
+        "pages/marking/marking"
+      ]
+    }
+  ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",

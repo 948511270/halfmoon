@@ -54,7 +54,7 @@ Page({
   },
   urlJump(){
     wx.redirectTo({
-      url: '/pages/index/index',
+      url: '../../subPackages/pages/marking/marking',
     })
   },
   // 当输入学号的输入框失焦后调用此方法 将学号存入变量studentId

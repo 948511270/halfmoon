@@ -8,7 +8,7 @@
     </view>
     <view class="user-info flex-item">
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <text class="edit">查看或编辑个人主页</text>
+      <text class="edit">点我登陆显示个人信息</text>
     </view>
   </view>
 
@@ -22,7 +22,7 @@
     value="{{ cascaderValue }}"
     title="请选择所在班级"
     options="{{ options }}"
-    bind:close="onClose"
+    bind:close="onClickModifyInformation"
     bind:finish="onFinish"
   />
   <van-cell-group>
