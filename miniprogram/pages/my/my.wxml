@@ -35,23 +35,31 @@
     border="{{ false }}"
   />
   <van-field
-  wx:if="{{ showField }}"
-  fieldValue="{{ fieldValue }}"
-  center
+    wx:if="{{ showField }}"
+    model:nameValue="{{ studentName }}"
+    required
     clearable
-    placeholder="请输入学号"
-    border="{{ false}}"
-    use-button-slot
+    bind:blur="onEnterName"
+    label="姓名"
+    placeholder="请输入姓名"
+  />
+
+  <van-field
+    wx:if="{{ showField }}"
+    idValue="{{ studentId }}"
     bind:blur="onEnterID"
+    label="学号"
+    placeholder="请输入学号"
+    center
+    required
+    use-button-slot
+    border="{{ false }}"
   >
-  
   <van-button slot="button" size="small" type="primary" >
-     
-     <text bindtap="onClickModifyInformation">点击确认</text>
+     <text bindtap="onClickModifyInformation">点我确认</text>
     </van-button>
   </van-field>
 </van-cell-group>
-
 </van-popup>
 
     <van-cell title="考核订阅" is-link bind:click="showPopup1" icon="todo-list"  size="large"/>

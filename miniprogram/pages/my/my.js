@@ -21,8 +21,10 @@ Page({
   data: {
     // options fieldValue cascaderValue为级联选择相关数据
     options,
-    fieldValue: '',
+    fieldValue:'',
     cascaderValue: '',
+    // 学生姓名
+    studentName:'',
     // 学生id
     studentId:'',
     // 控制考核订阅popup弹出层
@@ -52,22 +54,34 @@ Page({
   closePopup2(){
     this.setData({ showModifyInformation: false });
   },
+  // 点击我的批阅后跳转到我的批阅页面
   urlJump(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../../subPackages/pages/marking/marking',
     })
   },
+
+  // 当输入姓名的输入框失焦后调用此方法 将姓名存入变量studentName
+  onEnterName(event){
+    // event.detail 为当前输入的值
+    this.data.studentName = event.detail
+    
+  },
+
   // 当输入学号的输入框失焦后调用此方法 将学号存入变量studentId
   onEnterID(event) {
     // event.detail 为当前输入的值
     this.data.studentId = event.detail
+    
   },
+  
   // 当点击修改信息单元格中的确认修改按钮时调用 将数据输入框与整个修改信息popup关闭
   onClickModifyInformation(event){
     this.setData({
       showField:false,
       showModifyInformation: false
     });
+    log
   },
   // 级联选择完毕后调用 将数据拿到后分割开来 分割格式如下：软件/22级，分割完毕后存入变量中并关闭级联选择弹出层并打开学号输入框
   onFinish(e) {
