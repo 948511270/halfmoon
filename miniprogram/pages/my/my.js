@@ -36,7 +36,9 @@ Page({
     
     
   },
-
+  bindReplaceInput(){
+    console.log("bindReplaceInput");
+  },
   // 不知道为什么不能传参数 不然我就写到一个方法里了
   // showPopup1 是考核订阅的popup 
   // showPopup2 是修改信息的popup
@@ -63,26 +65,58 @@ Page({
 
   // 当输入姓名的输入框失焦后调用此方法 将姓名存入变量studentName
   onEnterName(event){
+    const chineseNameRegex = /^[\u4e00-\u9fa5]{2,}$/;
     // event.detail 为当前输入的值
+    if(event.detail.value){
+      if (!chineseNameRegex.test(event.detail.value)) {
+        wx.showToast({
+          title: '请输入正确姓名',
+          icon: 'none',
+          duration: 2000//持续的时间
+        })
+      } 
+      return
+    }
     this.data.studentName = event.detail
-    
   },
 
   // 当输入学号的输入框失焦后调用此方法 将学号存入变量studentId
   onEnterID(event) {
+    const idNumberRegex = /^6020\d{6}$/;
+    // event.detail 为当前输入的值
+    if(event.detail.value){
+      if (!idNumberRegex.test(event.detail.value)) {
+        wx.showToast({
+          title: '请输入正确学号',
+          icon: 'none',
+          duration: 2000//持续的时间
+        })
+      } 
+      return
+    }
     // event.detail 为当前输入的值
     this.data.studentId = event.detail
     
   },
   
   // 当点击修改信息单元格中的确认修改按钮时调用 将数据输入框与整个修改信息popup关闭
+  // 注意：此方法只能保证第一次输入有效，也就是程序中studentName studentId中有值，并不能保证每次输入都在输入框中有值。(因为我没想到怎么在按钮事件中判断输入框数据是否存在，所以只能判断整个页面中的这两个变量是否被输入框中数据赋值了)
   onClickModifyInformation(event){
+    try {
+        //判断姓名学号是否有输入
+        if(this.data.studentName == ''|| this.data.studentId == '') throw "姓名或学号输入框输入值不符合要求或为空"
+       
+    }catch(err){
+      //在此弹出警告信息并return出方法使this.setData不执行
+      console.log("onClickModifyInformation() err:",err);
+      return
+    }
     this.setData({
       showField:false,
       showModifyInformation: false
     });
-    log
   },
+ 
   // 级联选择完毕后调用 将数据拿到后分割开来 分割格式如下：软件/22级，分割完毕后存入变量中并关闭级联选择弹出层并打开学号输入框
   onFinish(e) {
     const { selectedOptions, value } = e.detail;

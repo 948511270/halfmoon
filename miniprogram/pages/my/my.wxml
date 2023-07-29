@@ -4,7 +4,7 @@
 <view class="container more">
   <view class="user flex-wrp">
     <view class="avatar flex-item">
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class="userinfo-avatar" background-size="cover"></image>
     </view>
     <view class="user-info flex-item">
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -15,7 +15,7 @@
   <view class="grille">
     <van-cell title="我的批阅" is-link bind:click="urlJump" icon="todo-list" icon="column"  size="large"/>
     <!-- 修改信息单元格->{修改信息弹出层嵌套{级联选择弹出层/学号填写弹出层}} -->
-    <van-cell title="修改信息" is-link bind:click="showPopup2" icon="todo-list" icon="setting"  size="large"/>
+    <van-cell title="修改信息" is-link bind:click="showPopup2"   icon="setting"  size="large"/>
     <van-popup show="{{ showModifyInformation }}" round position="bottom">
   <van-cascader
     wx:if="{{ showCascader }}"
@@ -42,6 +42,7 @@
     bind:blur="onEnterName"
     label="姓名"
     placeholder="请输入姓名"
+    
   />
 
   <van-field
