@@ -103,9 +103,11 @@ Page({
   // 注意：此方法只能保证第一次输入有效，也就是程序中studentName studentId中有值，并不能保证每次输入都在输入框中有值。(因为我没想到怎么在按钮事件中判断输入框数据是否存在，所以只能判断整个页面中的这两个变量是否被输入框中数据赋值了)
   onClickModifyInformation(event){
     try {
-        //判断姓名学号是否有输入
-        if(this.data.studentName == ''|| this.data.studentId == '') throw "姓名或学号输入框输入值不符合要求或为空"
-       
+        //判断姓名学号是否有输入（如果点进输入框但是没有输入任何东西就会被这个判断为不合理）
+        if( this.data.studentName.value === ''||this.data.studentId.value === '') throw "姓名或学号输入框输入值不符合要求或为空"
+        //判断姓名学号是否有输入(如果没有点进输入框就会被这个判断为不合理)
+        if( this.data.studentName=== ''||this.data.studentId === '') throw "姓名或学号输入框输入值不符合要求或为空"
+
     }catch(err){
       //在此弹出警告信息并return出方法使this.setData不执行
       console.log("onClickModifyInformation() err:",err);
